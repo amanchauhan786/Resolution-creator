@@ -20,9 +20,7 @@ if st.button("Generate Secret Message"):
         ascii_list = sentence_to_ascii(secret_message)
         st.success("Your Secret Message (as a list of numbers):")
         st.code(ascii_list, language='python')
-        if st.button("Copy Secret Message to Clipboard"):
-            pyperclip.copy(str(ascii_list))
-            st.info("Secret Message copied to clipboard!")
+        st.title(" Copy the list through above Copy option")
     else:
         st.error("Please enter a message!")
 
