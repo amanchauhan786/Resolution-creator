@@ -6,7 +6,7 @@ def add_bg_from_url():
         f"""
         <style>
         .stApp {{
-            background-image: url("https://images.pexels.com/photos/414144/pexels-photo-414144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            background-image: url("https://static.vecteezy.com/system/resources/previews/040/697/619/non_2x/ai-generated-tranquil-scene-dark-forest-mysterious-fog-spooky-night-beauty-in-nature-generated-by-ai-free-photo.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
