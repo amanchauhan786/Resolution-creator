@@ -6,7 +6,7 @@ def add_bg_from_url():
         f"""
         <style>
         .stApp {{
-            background-image: url("https://img.freepik.com/premium-photo/lonely-shoreline-with-dark-reflections-sad-background_636537-392185.jpg");
+            background-image: url("https://cdn.pixabay.com/photo/2022/04/22/17/33/forest-7150274_640.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
