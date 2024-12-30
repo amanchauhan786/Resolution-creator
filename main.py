@@ -1,6 +1,21 @@
 import streamlit as st
 import pyperclip
 
+def add_bg_from_url():
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("https://cdn.pixabay.com/photo/2021/06/25/23/27/forest-6364913_1280.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
 def sentence_to_ascii(sentence):
     return [ord(char) for char in sentence]
 
@@ -9,6 +24,9 @@ def ascii_to_sentence(ascii_list):
         return ''.join(chr(num) for num in ascii_list)
     except ValueError:
         return "Invalid input! Ensure the ASCII list contains valid numbers."
+
+# Add the background image
+add_bg_from_url()
 
 st.title("🎉 New Year Resolution Truth Sayer")
 
