@@ -114,7 +114,7 @@ if st.button("Crack the Message"):
 st.divider()
 
 # Shayari Generator (Password Protected)
-st.header("📜 Shayari Generator")
+st.header("v📜  Shayari  😎s")
 
 # Initialize the session state for Shayari Generator lock
 if 'shayari_unlocked' not in st.session_state:
@@ -133,7 +133,7 @@ if not st.session_state.shayari_unlocked:
 
     # Show the button to enter password again if not unlocked
     if not st.session_state.shayari_unlocked:
-        st.button("Shi Password Hi likhna")  # Button to show after page reload if needed
+        st.button("Shi Pass likh ke click kre 😵‍💫")  # Button to show after page reload if needed
 
 else:
     # When unlocked, display the Shayari Generator button
