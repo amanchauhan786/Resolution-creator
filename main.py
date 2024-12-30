@@ -125,17 +125,21 @@ if not st.session_state.shayari_unlocked:
     password = st.text_input("Enter Password to Unlock Shayari Generator", type='password')
     if password == '123456':  # Replace with your desired password
         st.session_state.shayari_unlocked = True
-        st.success("Shayari Generator Unlocked!")
-        # Display "Generate Shayari" button after successful unlock
-        st.button("Generate Random Shayari")  # Just the button to show after unlocking
+        st.success("Suswagatam aap Shayari Dekh Skte hain!")
+        st.button("Shayari Chune")  # Just the button to show after unlocking
     else:
         if password:  # Check if password field is not empty
-            st.warning("Incorrect password! Please try again.")
+            st.warning("Bhai!! Shayari kyun dekhni hai Tumhe!! Chalo Niklo Yahan Se!!!")
+
+    # Show the button to enter password again if not unlocked
+    if not st.session_state.shayari_unlocked:
+        st.button("Shi Password Hi likhna")  # Button to show after page reload if needed
+
 else:
     # When unlocked, display the Shayari Generator button
     st.success("Shayari Generator is Unlocked! 🎉")
     # Now, allow the user to generate Shayari
-    if st.button("Generate Random Shayari"):
+    if st.button("Shi Password Hi likhna"):
         shayari = get_random_shayari()
         st.markdown(f"<p class='big-font'>{shayari}</p>", unsafe_allow_html=True)
         st.markdown(f"<p class='big-font'>Shayari Copied to Clipboard</p>", unsafe_allow_html=True)
