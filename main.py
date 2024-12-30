@@ -113,7 +113,7 @@ if st.button("Crack the Message"):
 st.divider()
 
 # Random Shayari Generator
-st.header("📜 Random Shayari Generator")
+st.header("📜 Shayari Generator")
 if st.button("Generate Random Shayari"):
     shayari = get_random_shayari()
     st.markdown(f"<p class='big-font'>{shayari}</p>", unsafe_allow_html=True)
