@@ -139,7 +139,7 @@ else:
     # When unlocked, display the Shayari Generator button
     st.success("Shayari Generator is Unlocked! 🎉")
     # Now, allow the user to generate Shayari
-    if st.button("Shi Password Hi likhna"):
+    if st.button("Shayari Chune"):
         shayari = get_random_shayari()
         st.markdown(f"<p class='big-font'>{shayari}</p>", unsafe_allow_html=True)
 
