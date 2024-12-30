@@ -6,7 +6,7 @@ def add_bg_from_url():
         f"""
         <style>
         .stApp {{
-            background-image: url("https://cdn.pixabay.com/photo/2021/06/25/23/27/forest-6364913_1280.jpg");
+            background-image: url("https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?cs=srgb&dl=pexels-pixabay-206359.jpg&fm=jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
