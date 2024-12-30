@@ -141,7 +141,10 @@ else:
     # Now, allow the user to generate Shayari
     if st.button("Shayari Chune"):
         shayari = get_random_shayari()
-        st.markdown(f"<p class='big-font'>{shayari}</p>", unsafe_allow_html=True)
+        st.markdown(
+    f"<p style='font-size: 50px; font-weight: bold; color: white;'>{shayari}</p>", 
+    unsafe_allow_html=True
+)
 
     # In case they are attempting again
-    st.warning("You have unlocked the generator, please generate Shayari now!")
+    st.warning("AAP ISKA ISTEMAL KRKE AMAN KI SHAYARI DEKH SKTE HAIN, please generate Shayari now!")
