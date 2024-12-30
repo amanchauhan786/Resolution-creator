@@ -117,8 +117,8 @@ st.divider()
 st.header("📜 Shayari Generator")
 
 # Initialize the session state for Shayari Generator lock
-
-st.session_state.shayari_unlocked = False
+if 'shayari_unlocked' not in st.session_state:
+    st.session_state.shayari_unlocked = False
 
 # Password Input and Lock Logic
 if not st.session_state.shayari_unlocked:
@@ -126,13 +126,20 @@ if not st.session_state.shayari_unlocked:
     if password == '123456':  # Replace with your desired password
         st.session_state.shayari_unlocked = True
         st.success("Shayari Generator Unlocked!")
+        # Display "Generate Shayari" button after successful unlock
+        st.button("Generate Random Shayari")  # Just the button to show after unlocking
     else:
-        st.warning("Incorrect password! Please try again.")
+        if password:  # Check if password field is not empty
+            st.warning("Incorrect password! Please try again.")
 else:
     # When unlocked, display the Shayari Generator button
     st.success("Shayari Generator is Unlocked! 🎉")
+    # Now, allow the user to generate Shayari
     if st.button("Generate Random Shayari"):
         shayari = get_random_shayari()
         st.markdown(f"<p class='big-font'>{shayari}</p>", unsafe_allow_html=True)
         st.markdown(f"<p class='big-font'>Shayari Copied to Clipboard</p>", unsafe_allow_html=True)
         pyperclip.copy(shayari)
+
+    # In case they are attempting again
+    st.warning("You have unlocked the generator, please generate Shayari now!")
