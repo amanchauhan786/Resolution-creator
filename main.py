@@ -11,6 +11,10 @@ def add_bg_from_url():
             background-repeat: no-repeat;
             background-attachment: fixed;
         }}
+        .big-font {{
+            font-size: 24px;
+            font-weight: bold;
+        }}
         </style>
         """,
         unsafe_allow_html=True
@@ -53,7 +57,8 @@ if st.button("Crack the Message"):
             ascii_list = list(map(int, ascii_input.strip('[]').split(',')))
             cracked_message = ascii_to_sentence(ascii_list)
             st.success("Your Cracked Message:")
-            st.write(cracked_message)
+            # Display the message in bold with increased font size
+            st.markdown(f"<p class='big-font'>{cracked_message}</p>", unsafe_allow_html=True)
             # Display hearts emojis and balloons
             st.markdown("❤️ ❤️ ❤️ 🎉")
             st.balloons()
