@@ -36,6 +36,9 @@ if st.button("Crack the Message"):
             cracked_message = ascii_to_sentence(ascii_list)
             st.success("Your Cracked Message:")
             st.write(cracked_message)
+            # Display hearts emojis and balloons
+            st.markdown("❤️ ❤️ ❤️ 🎉")
+            st.balloons()
         except ValueError:
             st.error("Invalid input! Please ensure the input is a list of numbers separated by commas.")
     else:
