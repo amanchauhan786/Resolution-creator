@@ -115,15 +115,21 @@ st.divider()
 
 # Shayari Generator (Password Protected)
 st.header("📜 Shayari Generator")
+
+# Initialize the session state for Shayari Generator lock
 if 'shayari_unlocked' not in st.session_state:
     st.session_state.shayari_unlocked = False
 
+# Password Input and Lock Logic
 if not st.session_state.shayari_unlocked:
     password = st.text_input("Enter Password to Unlock Shayari Generator", type='password')
-    if password == '123456':
+    if password == '123456':  # Replace with your desired password
         st.session_state.shayari_unlocked = True
         st.success("Shayari Generator Unlocked!")
+    else:
+        st.warning("Incorrect password! Please try again.")
 else:
+    # When unlocked, display the Shayari Generator button
     if st.button("Generate Random Shayari"):
         shayari = get_random_shayari()
         st.markdown(f"<p class='big-font'>{shayari}</p>", unsafe_allow_html=True)
