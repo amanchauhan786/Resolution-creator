@@ -117,8 +117,8 @@ st.divider()
 st.header("📜 Shayari Generator")
 
 # Initialize the session state for Shayari Generator lock
-if 'shayari_unlocked' not in st.session_state:
-    st.session_state.shayari_unlocked = False
+
+st.session_state.shayari_unlocked = False
 
 # Password Input and Lock Logic
 if not st.session_state.shayari_unlocked:
