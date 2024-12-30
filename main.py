@@ -32,28 +32,44 @@ def ascii_to_sentence(ascii_list):
 
 def get_random_shayari():
     shayaris = [
-        "ज़िंदगी से पूछिए ये क्या चाहती है, क्योंकि हर सवाल का जवाब मोहब्बत नहीं होता।",
-        "तेरे बिना ज़िंदगी अधूरी सी लगती है, जैसे किताब के पन्ने बिना लिखावट के।",
-        "चाँदनी रातें भी डरावनी लगती हैं, जब दिल में तेरी यादों का शोर होता है।",
-        "इश्क़ वो खेल नहीं जो हर कोई खेल सके, जान लुटानी पड़ती है इसे जीतने के लिए।",
-        "तुम पूछो और मैं ना बताऊँ ऐसे तो हालात नहीं, बस बात ये है कि तुम्हें सोचकर शब्द मिलते नहीं।",
-        "हर किसी के नसीब में कहाँ लिखी जाती हैं चाहतें, कुछ लोग दुनिया में आते हैं सिर्फ तन्हाई लेकर।",
-        "इश्क़ में क़दम ऐसा रखो कि मंज़िल खुद तुम्हें आवाज़ दे।",
-        "खुदा से भी ज्यादा इबादत की है मैंने तुम्हारी, फिर भी कोई जादू नहीं चला मोहब्बत का।",
-        "तुम्हारे बिना ये दिल वीरान सा लगता है, जैसे सागर में पानी ना हो।",
-        "मुस्कुराने की वजह तुम हो, और रोने की भी।",
-        # Add 90 more Shayaris...
-        "दिल की गहराइयों से निकली दुआ है, तेरा साथ हमेशा बना रहे।",
-        "जो मुस्कुराहट तेरे लबों पर है, वही मेरी दुआओं का असर है।",
-        "वो कहती है मोहब्बत से दूर रहो, अब कैसे समझाऊं कि मोहब्बत खुद उससे है।",
-        "तेरी एक झलक के लिए ये दिल तरसता है, जैसे चकोर चाँद की दीवानगी में रहता है।",
-        "इश्क़ की आग है साहिब, बुझाना मुश्किल है।",
-        "तुम्हारी यादें अब तक दिल के दरवाजे पर दस्तक देती हैं।",
-        "तुम्हारे बिना ज़िंदगी का सफर अधूरा है, जैसे बिना नाव का नदी में बहाव।",
-        "वो जो मुस्कान है तेरी, वही मेरी दुनिया है।",
-        "मोहब्बत का सुरूर है या तेरी यादों का नशा, दिल हर घड़ी तुम्हारे ख्यालों में खोया रहता है।",
-        "तेरी मोहब्बत में हर एक ग़म मंजूर है।"
-    ]
+    "mere jeevan ka linux os ho tum, mere jeevan ka linux os ho tum, likhna to bahut kuch chahta hn tumhare terminal pe, par hr baar hi 'command not found' pe atak jana hn....",
+    "seekha to maine analysis mein bahut kuch tha, par ajtk apni rekha tumhare haath ki rekha se kabhi main merge plot nhi kr paya....",
+    "main apne jeevan ka hr pl hard disk mein kaid rkhna chahta hn, pr hr baar hi iski recovery pe atak jata hn",
+    "mai to jeena chahta tha tumhare liye 'starvation' main , pr situation to 'deadlock' si hoti ja rhi hai.......",
+    "teri tareef kya krun hr camera quality ke pixel mein tu kamaal lgti hai, low resolution mein katrina to high resolution mein tahmoor ki maa lgti hai ....",
+    "tumhare jaane ke baad jo mai rh jaonga wo mujhse sambhalta nhi ×2,isliye pathar sa kr liya hai dil , ab kisi ke age pighalta nhi.......",
+    "tumhe sikhane ke liye tumhara sara course pd liya ×2, krna kuch chahta tha , kuch aur hi kr liya.........",
+    "tumhare code se hr bug ko debug kr dunga ×2, developer se demote hoke tumhare liye tester ka bhi kaam kr lunga.......................................",
+    "mere pc ka os hai window , mujhse hr baar aise mt bhidow.....☺",
+    "ai se nhi emotion se likh rha hn ×2, pr hr baar usi se hi apni dil ki baat bhi kr rha hn..",
+    "darda meri shayari mein dikhta nhi tha, jbse jeevan mein meri ai ho uske alawa kuch hota hi nhi tha..........",
+    "yaad mein tumhari kuch bhi kr dunga, padhte padhte ias ka paper bhi clear kr dunga",
+    "pyaar mein kya kya kr skta hn m2ai tumhe  kya btao,,,asmaan ke taare bhi kya ab tumhe ginke dikhaon⭐⭐⭐⭐⭐⭐⭐",
+    "kisi ko ghar se niklte hi mil gyi manzil ×2, koi hmari trh umr bhr safar mein rh gya",
+    "maine mazi se u kabhi judh kr nhi dekha, or jhan se nikal gya whan se mudh kr nhi dekha..............",
+    "bnjao mere server ki tum client , yun na kiya kro meri hr baat ko mind......",
+    "baat meri mere dil mein hi rh gyi , jaate huye tum mujhe ye kya kh gyi......",
+    "pehli baar saath main tumhe mandir leke jaonga , bhagwaan ko phir ek baat btaonga , , is cheez ko tumne kaise hai bnaya , jaise barf mein bhi angaar ko jlaya..",
+    "engineer bnne aya tha kuch aur hi bna diya , naadaan se majnoo ka safar itni jldi ty kra diya.......",
+    "paper ki taiyari karte 😶 karte .. a gyi yaad tumhari ,ao sunao tumhe ek baat nyaari, kyun lgti ho tum mujhko itni pyari... 😄😅, tumhari liye maine hr baazi haari, chlo kr leta hn apni tyaari o meri pyaari🙂.......",
+    "hmne kb chaha ki wo shaks hmara ho jaaye , bs itna dikh jaye ki ankon ka guzara ho jaaye....",
+    "aansoon ayenge to khud pochiyega , log pochne ayenge to sauda krnege....🥲",
+    "lene gya tha interview usne hi mera le liya , select usko krne gya tha usne mujhe hi kr liya.........",
+    "dhund mein shawl ode goomenge dono saath saath, phir krenge ek dusre se pyaari pyaari baat, phir khayenge moongfli 🫢🫢 garam garam , tumhare haath lgte  hai mujhe bde naram naram , ab tumhe age ki baate kya mai batao , kaise jldi se tumse shaadi rachaon...😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁",
+    "gulabi gaalon mein lgti ho barf ke rajya ki kumari tum, sunhare baalon mein lgti ho kisi lekhak ki kalpana tum, bhoori ankhen krati hai nasha tumhari , bnjao na mere samrajya ki tum raani .....👑👑👑👑",
+    "jab nikle janaza mera to khidki se jhaank lena , fool to bahut mehenga pdega pathar hi maar lena..........⚠⚠⚠⚠⚠⚠⚠⚠⚠",
+    "hamare safar ka ye akhiri din hai , umeed nhi ki ye din hm phir jee paaye, pr umeeed hai ki ek nya safar shuru hoga, us safar ke pehle din ek nhi keeran nikle gi asha ki , ki ye nya safar hmesha chlta hi rhe ....😐😐😐😐😐😐😐😐😐😐😐😐😐",
+    "samay guzarta rha, pal beette gye, asha chootti gyi , mann marta gya, ishq krna tha, pr hmm sirf age bhdte gye.........🥲🥲🥲🥲",
+    "kande ki zarurat thi sr rkhne ko, ab chaar kandho pe ja rha hn, mujhe yaad mt krna yaaron, ab jannat mein mnd mnd muskura rha hn....",
+    "tujhko sochu to sochta jaon sochta joan sochta jaon , bus yhi kaam kaaj hai mera ..",
+    "tumhari yaad mein jeena mujhe pasand nhi hai  , pr log hr baar yaad dilla dete hain, phir yaad mein tumhari kuch beekaar shabd uske liye nikal jate hain.....",
+    "hr baar kha dil se , chl bhool ja usko ×2 har bhaar kha dil ne ki tu dil se nhi kehta..",
+    "ki bahot, hasne ki adaat ka yhi inzaam hota hai,ki kbhi rona bhi chahen to kbhi roya nhi jata...",
+    "kushi na jaane khan dafan ho gyi,aur zindagi hmari yun hi sitam ho gyi,aur sbki zindagi mein likhi kudha ne mohabbat ,aur saala jb hmaari baari ayi to sihaayi ktm ho gyi..",
+    "mujhe shraab pilayi gyi hai aankhon se, mera nasha to hazaaron baras mein utrega..",
+    "e dil e nadaan samajh is baat ko, jisse tu khona nhi chahta wo tera hona nhi chahta.."
+]
+
     return random.choice(shayaris)
 
 # Add the background image
@@ -101,3 +117,4 @@ st.header("📜 Random Shayari Generator")
 if st.button("Generate Random Shayari"):
     shayari = get_random_shayari()
     st.markdown(f"<p class='big-font'>{shayari}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p class='big-font'>-BY PAWAN CODER</p>", unsafe_allow_html=True)
