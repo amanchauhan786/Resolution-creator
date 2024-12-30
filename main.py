@@ -130,6 +130,7 @@ if not st.session_state.shayari_unlocked:
         st.warning("Incorrect password! Please try again.")
 else:
     # When unlocked, display the Shayari Generator button
+    st.success("Shayari Generator is Unlocked! 🎉")
     if st.button("Generate Random Shayari"):
         shayari = get_random_shayari()
         st.markdown(f"<p class='big-font'>{shayari}</p>", unsafe_allow_html=True)
