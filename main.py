@@ -142,8 +142,6 @@ else:
     if st.button("Shi Password Hi likhna"):
         shayari = get_random_shayari()
         st.markdown(f"<p class='big-font'>{shayari}</p>", unsafe_allow_html=True)
-        st.markdown(f"<p class='big-font'>Shayari Copied to Clipboard</p>", unsafe_allow_html=True)
-        pyperclip.copy(shayari)
 
     # In case they are attempting again
     st.warning("You have unlocked the generator, please generate Shayari now!")
