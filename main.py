@@ -142,7 +142,7 @@ else:
     if st.button("Shayari Chune"):
         shayari = get_random_shayari()
         st.markdown(
-    f"<p style='font-size: 50px; font-weight: bold; color: white;'>{shayari}</p>", 
+    f"<p style='font-size: 40px; font-weight: bold; color: white;'>{shayari}</p>", 
     unsafe_allow_html=True
 )
 
