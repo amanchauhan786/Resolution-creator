@@ -114,7 +114,7 @@ if st.button("Crack the Message"):
 st.divider()
 
 # Shayari Generator (Password Protected)
-st.header("v📜  Shayari  😎s")
+st.header("📜  Shayari  😎")
 
 # Initialize the session state for Shayari Generator lock
 if 'shayari_unlocked' not in st.session_state:
@@ -147,4 +147,4 @@ else:
 )
 
     # In case they are attempting again
-    st.warning("AAP ISKA ISTEMAL KRKE AMAN KI SHAYARI DEKH SKTE HAIN, please generate Shayari now!")
+    st.warning("AAP ISKA ISTEMAL KRKE AMAN KI SHAYARI DEKH SKTE HAIN, please generate Shayari now! For (対セス)")
