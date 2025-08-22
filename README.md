@@ -7,7 +7,8 @@ A simple and motivational web application designed to help users create, track, 
 ---
 
 🖼️ Preview Screenshot  
-<img width="1911" height="686" alt="image" src="https://github.com/user-attachments/assets/a4daf9d6-32b9-4c8e-b231-7d46ff2fb4be" />
+<img width="1911" height="686" alt="image" src="https://github.com/user-attachments/assets/bb29afb6-7be7-40d2-b012-f4ab5bcb105e" />
+
 
 
 
