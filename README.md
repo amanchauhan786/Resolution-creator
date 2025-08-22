@@ -1,3 +1,4 @@
+<img width="1911" height="686" alt="image" src="https://github.com/user-attachments/assets/2f159909-7513-4c38-a8cd-4cc9e14a51c6" />
 
 ````markdown
 # Resolution Creator
@@ -5,10 +6,6 @@
 A simple and motivational web application designed to help users create, track, and visualize their goals and resolutions for the year.
 
 ---
-
-🖼️ Preview Screenshot  
-<img width="1911" height="686" alt="image" src="https://github.com/user-attachments/assets/bb29afb6-7be7-40d2-b012-f4ab5bcb105e" />
-
 
 
 
